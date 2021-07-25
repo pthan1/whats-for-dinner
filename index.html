@@ -11,15 +11,16 @@
       <div class='container'>What's For Dinner?</div>
   </div>
     <div class = "main-section">
-
       <div class = "left-section">
         <p>What are you looking for?</p>
-        <input type="radio" name="dish-option" value="side-dish">
-        <label for="side-dish">Side</label><br>
-        <input type="radio" name="dish-option" value="main-dish">
-        <label for="main-dish">Main Dish</label><br>
-        <input type="radio" name="dish-option" value="Dessert">
-        <label for="dessert">Dessert</label><br>
+        <ul>
+          <li><input type="radio" name="dish-option" id="side-dish" value="side-dish">
+          <label for="side-dish">Side</label></li>
+          <li><input type="radio" name="dish-option" id="main-dish" value="main-dish">
+          <label for="main-dish">Main Dish</label></li>
+          <li><input type="radio" name="dish-option" id="dessert" value="dessert">
+          <label for="dessert">Dessert</label></li>
+        </ul>
         <button class="lets-cook" type="button">Let's Cook!</button>
       </div> 
 
@@ -29,7 +30,8 @@
 
   
     </div>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="food_list.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
 
