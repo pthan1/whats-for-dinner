@@ -6,13 +6,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>What's For Dinner?: Vegetarian Version</title>
   </head>
+  <header>
+    <p class="header-title">What's for Dinner?</p>
+  </header>
   <body>
-    <div class="header">
-      <div class='container'>What's For Dinner?</div>
-  </div>
-    <div class = "main-section">
-      <div class = "left-section">
-        <p>What are you looking for?</p>
+    <section class="login-view">
+      <div class="login-view-left-section">
+        <form>
+          <label for="name">Name</label>
+            <input class="name" type="text" id="name" />
+          <button class="login-button">Login</button>
+        </form>
+      </div>
+    </section>
+    <section class="main-page-view hidden">
+      <div class="main-section">
+        <div class="left-section">
+        <p class="looking-for">What are you looking for?</p>
         <ul>
           <li><input type="radio" name="dish-option" id="side-dish" value="side-dish">
           <label for="side-dish">Side</label></li>
@@ -23,17 +33,13 @@
         </ul>
         <button class="lets-cook" type="button">Let's Cook!</button>
       </div> 
-
       <div class = "right-section">
-        <img src="/assets/cookpot.svg">
+        <img src="/assets/cookpot.svg" alt="cook pot">
       </div>
-
+    </section>  
   
     </div>
     <script type="text/javascript" src="food_list.js"></script>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
-
-
-//radio button labels don't work when clicking text.
