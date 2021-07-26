@@ -5,11 +5,13 @@ var letsCookButton = document.querySelector('.lets-cook');
 var loginButton = document.querySelector('.login-button');
 
 var rightDiv = document.querySelector('.right-section');
+var lookingFor = document.querySelector('.looking-for');
 
 var sideDish = sideDishes[getRandomIndex(sideDishes)];
 var mainDish = mainDishes[getRandomIndex(mainDishes)];
 var dessert = desserts[getRandomIndex(desserts)];
 
+var nameInputField = document.getElementById('name');
 
 letsCookButton.addEventListener('click', showRecipe);
 loginButton.addEventListener('click', loginAndShowMainApp);
@@ -19,7 +21,8 @@ function loginAndShowMainApp(e) {
     console.log('classList', loginView.classList);
     mainView.classList.remove('hidden');
     mainView.classList.add('flex');
-    
+    lookingFor.innerHTML = `<p>Hello, ${nameInputField.value}!</p>
+    <p>What are you looking for?</p>`;
     e.preventDefault();
 }
 
