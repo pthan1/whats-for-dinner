@@ -18,7 +18,6 @@ loginButton.addEventListener('click', loginAndShowMainApp);
 
 function loginAndShowMainApp(e) {
     loginView.classList.add('hidden');
-    console.log('classList', loginView.classList);
     mainView.classList.remove('hidden');
     mainView.classList.add('flex');
     lookingFor.innerHTML = `<p>Hello, ${nameInputField.value}!</p>
