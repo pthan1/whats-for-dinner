@@ -30,9 +30,9 @@ body {
     border: solid cyan 10px;
     height: 100vh;
 }
-.login-view-left-section {
-    display: hidden;
-}
+/* .login-view-left-section {
+    /* display: hidden; */
+} */
 .main-page-view {
     
     display: flex;
